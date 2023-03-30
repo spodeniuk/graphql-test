@@ -1,0 +1,30 @@
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    li {
+      margin-top: 12px;
+      max-width: 320px;
+      transition: all 1s ease;
+      transform-origin: left center;
+      transform: scale(1);
+      a {
+        font-size: 44px;
+        line-height: 52px;
+        padding: 2px 12px;
+        background-color: #252525;
+        box-shadow: 0 0 0 #252525, 0 0 0 #252525;
+        box-decoration-break: clone;
+        color: #fff;
+      }
+      &.is-hidden {
+        height: 0 !important;
+        transform: scale(0);
+        margin-top: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
