@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+/* import { Routes, Route } from "react-router-dom"; */
 
 import api from "api";
 
-import { Menu } from "shared/components/ui";
+/* import { Menu } from "shared/components/ui"; */
 import { MenuType } from "shared/types";
 
 export const Root = () => {
