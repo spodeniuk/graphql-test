@@ -13,7 +13,10 @@ export const Root = () => {
     try {
       const { data } = await api.services.menu.getItems();
       setMenuList(data);
-    } catch(e) {}
+    } catch(e) {
+      console.log(e);
+      
+    }
   }
 
   useEffect(() => {
