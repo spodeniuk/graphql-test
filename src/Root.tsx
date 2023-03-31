@@ -20,11 +20,17 @@ export const Root = () => {
     fetchMenuData()
   }, [])
 
-  if(!menuList) return null;
+  console.log(menuList);
+
+  return (
+    <div>Cool page</div>
+  )
+
+  /* if(!menuList) return null;
 
   return (
     <Routes>
       {menuList.menuItems.data.map(item => <Route key={`page-route${item.id}`} path={item.attributes.url} element={<Menu data={menuList} />} />)}
     </Routes>
-  )
+  ) */
 }
